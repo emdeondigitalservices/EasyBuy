@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">EasyBuy</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Exclusive Products</string>
+    <string name="slide_1_desc">Get products which are unique and only available at our shops !</string>
+
+    <string name="slide_2_title">Cheap Rates</string>
+    <string name="slide_2_desc">Products at such an affordable rates !</string>
+
+    <string name="slide_3_title">Hassle Free Payments</string>
+    <string name="slide_3_desc">With various pay options , you can easily pay in a minute !</string>
+
+    <string name="slide_4_title">Fast Delivery</string>
+    <string name="slide_4_desc">Blazing fast order delivery within time !</string>
+
+    <string name="login">Login</string>
+    <string name="send">Send</string>
+    <string name="viaemail">Email</string>
+    <string name="viaphone">Phone</string>
+    <string name="verify">Verify</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="register_now">Register Now</string>
+
+    <string name="register">Register</string>
+    <string name="login_now">Login Now</string>
+    <string name="about_activity_title">About Us</string>
+    <string name="domain">Domain</string>
+    <string name="website">BeingDev.com</string>
+    <string name="licence">License</string>
+    <string name="licencedesc">Licence Desc</string>
+    <string name="changelog">Changelog</string>
+    <string name="changes">Changes</string>
+    <string name="about_activity_description"><b>Boost Your Brand and Company Image with Premium Online Printing Services from Us ! </b></string>
+    <string name="help">In case of any query feel free to reach us at : \n    beingdev.com@gmail.com\n\nYou can also Call us at our helpline numbers : \n     +91-9291299322 \n     +91-8732883291</string>
+    <!--Navigation drawer items-->
+    <string name="home">Home</string>
+    <string name="myprofile">Profile</string>
+    <string name="myorders">My Orders</string>
+    <string name="cart">Cart</string>
+    <string name="logout">Logout</string>
+    <string name="feedback">Feedback</string>
+    <string name="aboutapp">About App</string>
+    <string name="rate">Rate Us</string>
+    <string name="helpcentre">Help Center</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="back">Back</string>
+    <string name="a_member">Already a member? Click here</string>
+
+    <string name="orderdetails">Your Order has been Placed Succesfully. \n Here is your Unique Order Id !</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="password_message">Password should have more than 8 characters.</string>
+    <string name="password_title">Password Requirement</string>
+    <string name="password_instructions">Click here for password instructions.</string>
+    <string name="orderPlacedSMS">Sample Order Placed email format.</string>
+    <string name="registrationCompleted">Your registration has been completed with EasyBuy.</string>
+</resources>

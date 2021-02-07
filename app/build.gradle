@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion setup.compileSdk
+    buildToolsVersion setup.buildTools
+    defaultConfig {
+        applicationId "com.emdeondigital.easybuy"
+        minSdkVersion setup.minSdk
+        targetSdkVersion setup.targetSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    //implementation 'com.google.android.material:material:1.2.0-alpha05'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.github.florent37:materialtextfield:1.0.7'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.google.firebase:firebase-analytics:17.4.0'
+    // Add the SDK for Firebase Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging:20.1.6'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-firestore:21.4.2'
+    implementation 'com.firebaseui:firebase-ui-database:3.1.0'
+    // Add the SDK for Firebase Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging:20.1.6'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.tomer:fadingtextview:2.5'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.okhttp:okhttp:1.6.0'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:1.6.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    //implementation 'com.mikepenz:materialize:1.2.1'
+    /*implementation("com.mikepenz:materialdrawer:5.8.1") {
+        transitive = true
+    }*/
+    //implementation "com.mikepenz:fastadapter:3.3.1"
+    /*implementation ('com.mikepenz:fastadapter:1.8.2@aar') {
+        transitive = true
+    }*/
+    //implementation 'com.mikepenz:fastadapter-extensions-expandable:3.3.1'
+    //implementation "com.mikepenz:fastadapter-commons:3.3.1"
+    //implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.webianks.library:easy-feedback:1.0.2'
+    //implementation 'com.mikepenz:aboutlibraries:8.0.2'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.11.0'
+    //implementation "com.mikepenz:fastadapter-extensions-binding:4.1.2" // diff util helpers
+    //implementation 'com.mikepenz:fastadapter-extensions:3.0.0@aar'
+    //implementation "com.mikepenz:fastadapter-extensions-diff:5.0.0-a02" // diff util helpers
+    //implementation "com.mikepenz:fastadapter-extensions-drag:3.3.1" // drag support
+    //implementation "com.mikepenz:fastadapter-extensions-paged:3.3.1" // paging support
+    //implementation "com.mikepenz:fastadapter-extensions-scroll:4.1.2" // scroll helpers
+    //implementation "com.mikepenz:fastadapter-extensions-swipe:5.0.0-b01" // swipe support
+    //implementation "com.mikepenz:fastadapter-extensions-ui:4.1.0" // pre-defined ui components
+    //implementation "com.mikepenz:fastadapter-extensions-utils:4.1.2" // needs the `expandable`, `drag` and `scroll` extension.
+    //Implementing MaterialDrawer
+    //implementation "com.mikepenz:materialdrawer:6.1.2"
+
+//required support lib modules
+    //implementation "androidx.annotation:annotation:1.1.0"
+    //implementation 'com.google.android.material:material:1.2.0-alpha05'
+
+// Add for NavController support
+    //implementation "com.mikepenz:materialdrawer-nav:8.0.0"
+    implementation("com.mikepenz:materialdrawer:6.1.2@aar") {
+        transitive = true
+    }
+    implementation "com.android.support:recyclerview-v7:${versions.supportLib}"
+    implementation "com.android.support:support-annotations:${versions.supportLib}"
+    implementation "com.android.support:design:${versions.supportLib}"
+/*    implementation "com.mikepenz:aboutlibraries-core:6.0.1"
+    implementation "com.mikepenz:aboutlibraries:6.0.1"
+    implementation "com.mikepenz.aboutlibraries.plugin:aboutlibraries-plugin:6.0.1"*/
+    implementation('com.mikepenz:aboutlibraries:6.2.0-rc01') {
+        transitive = true
+    }
+    implementation 'com.mikepenz:crossfadedrawerlayout:1.0.1@aar'
+    implementation 'com.mikepenz:crossfadedrawerlayout:1.1.0'
+
+//Glide Slider
+    implementation "com.github.bumptech.glide:glide:4.9.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.9.0"
+
+    implementation "com.github.firdausmaulan:GlideSlider:1.5.1"
+//radiogroup
+    implementation 'com.github.Gavras:MultiLineRadioGroup:v1.0.0.6'
+    //implementation 'com.github.mukeshsolanki:country-picker-android:2.0.2'
+    //implementation 'com.github.inpossoft:CountryCodePickerProject:2.0.0'
+    implementation 'com.hbb20:ccp:2.3.8'
+    //buble type progress bar
+    implementation 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+
+}
